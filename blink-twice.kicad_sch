@@ -1349,7 +1349,7 @@
 				)
 			)
 		)
-		(symbol "ne555p:NE555P"
+		(symbol "local:NE555P"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1580,9 +1580,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1656,8 +1656,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1739,7 +1739,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2066,6 +2066,16 @@
 			(type default)
 		)
 		(uuid "91ebfa9b-f390-41fb-bc2a-5aab534f6ffa")
+	)
+	(wire
+		(pts
+			(xy 209.55 78.74) (xy 209.55 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96653dea-3938-4822-a5d9-c8e596bf3b37")
 	)
 	(wire
 		(pts
@@ -3316,7 +3326,7 @@
 		)
 	)
 	(symbol
-		(lib_id "ne555p:NE555P")
+		(lib_id "local:NE555P")
 		(at 133.35 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3402,7 +3412,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 209.55 82.55 0)
+		(at 209.55 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3411,7 +3421,7 @@
 		(fields_autoplaced yes)
 		(uuid "973c5cf0-c0db-4bf3-ab29-71b188df06c0")
 		(property "Reference" "#FLG01"
-			(at 209.55 80.645 0)
+			(at 209.55 76.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3420,7 +3430,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 209.55 78.4169 0)
+			(at 209.55 74.6069 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3428,7 +3438,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 82.55 0)
+			(at 209.55 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3437,7 +3447,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 209.55 82.55 0)
+			(at 209.55 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3446,7 +3456,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 209.55 82.55 0)
+			(at 209.55 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
